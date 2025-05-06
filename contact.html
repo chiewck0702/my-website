@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css" type="text/css">
+    <title>Online Portfolio</title>
+</head>
+<body>
+    <header role="header">
+        <h1>Chiew's Online Portfolio</h1>
+        <nav role="navigation"> 
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <article>
+            <header><h2>Contact Me</h2></header>
+            <h3 style="text-align: center;" id="labelHeading">Please add your contact details here</h3>
+            <div>                
+                <form id="contactForm" name="contactForm" action="">
+                    <table class="tblCenter">
+                    <tr>
+                        <td style="min-width: 250px;"><label for="fname">Name : </label></td>
+                        <td><input required="required" type="text" size="30" name="name" id="name" autofocus="" placeholder="Your Full Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age : </label></td>
+                        <td><input style="min-width: 70px;" required="required" type="number" min="18" max="50" name="age" id="age" placeholder="Your Age"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Birthday">Date of Birth : </label></td>
+                        <td><input type="date" name="DoB" id="DoB" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Mobile Number : </label></td>
+                        <td><input required="required" type="text" size="30" name="mobileNo" id="mobileNo" placeholder="01x-xxxxxxx"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Country">Country : </label></td>
+                        <td><select name="country" id="country">
+                            <option value="Malaysia"> Malaysia</option>
+                            <option value="Singapore"> Singapore</option>
+                            <option value="Indonesia"> Indonesia</option>
+                            <option value="Others"> Others</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Gender">Gender : </label></td>
+                        <td>
+                            <input type="radio" name="gender" id="gender" value="Male"> Male
+                            <input type="radio" name="gender" id="gender" value="Female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email : </label></td>
+                        <td><input required="required" type="email" size="30" name="email" id="email" placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="website url">Personal / Company Website : </label></td>
+                        <td><input type="text" size="30" name="websiteURL" id="websiteURL" placeholder="Enter your url"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prefer method">Preferred method of contact: </label></td>
+                        <td>
+                            <input type="checkbox" name="contactMethod" value="Phone"> Phone
+                            <input type="checkbox" name="contactMethod" value="Email"> Email
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message : </label></td>
+                        <td><textarea required="required" name="message" id="message" rows="4" cols="50" placeholder="Type your message here..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input class="btn" type="submit" name="submit" id="submit" value="Submit Form">
+                            <input class="btn" type="reset" name="reset" id="reset" value="Clear Form">
+                        </td>
+                    </tr>
+                    </table>
+                </form>                
+            </div>
+
+            <div id="submittedContactInfo">
+                <table>
+                    <tr>
+                        <td><label>Name: </label></td>
+                        <td><input type="text" id="resultName" size="30" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Age: </label></td>
+                        <td><input type="text" size="10" id="resultAge" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Date of Birth: </label></td>
+                        <td><input type="text" id="resultDob" size="10" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Mobile Number: </label></td>
+                        <td><input type="text" id="resultMobileNo" size="30" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Country: </label></td>
+                        <td><input type="text" id="resultCountry" size="30" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender: </label></td>
+                        <td><input type="text" id="resultGender" size="30" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email: </label></td>
+                        <td><input type="text" id="resultEmail" size="30" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Personal / Comapany Website: </label></td>
+                        <td><input type="text" id="resultUrl" size="30" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Preferred method of contact: </label></td>
+                        <td><input type="text" id="resultContactMethod" size="30" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label>Message: </label></td>
+                        <td><textarea id="resultMessage" rows="4" cols="50" readonly></textarea></td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>Follow us at :</p>
+        <div>
+            <a href=""><img src="../image/twitter.jpg" alt="Twitter" id="twitter"></a>
+            <a href="https://www.facebook.com/share/187W1pJFWd/" target="_blank"><img src="../image/facebook.jpg" alt="Facebook" id="facebook"></a>
+            <a href="https://www.instagram.com/chiewchinkuan?igsh=MWM0eTIxNnFpMG5sNQ==" target="_blank"><img src="../image/instagram.jpg" alt="Instagram" id="instagram"></a>
+            <a href="https://www.youtube.com/@chiewchinkuan7229" target="_blank"><img src="../image/youtube.jpg" alt="Youtube" id="youtube"></a>
+        </div>
+        <h5>Copyright &copy; d032310456@student.utem.edu.my</h5>
+        <div class="embed-map-fixed"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=utem&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://sprunkiretake.net" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki retake</a></div><style>.embed-map-fixed{position:relative;text-align:right;width:600px;height:400px;}.embed-map-container{overflow:hidden;background:none!important;width:600px;height:400px;}.embed-map-frame{width:600px!important;height:400px!important;}</style></div>
+    </footer>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function()
+        {
+            document.getElementById("contactForm").addEventListener("submit", function(event) 
+            {
+                event.preventDefault();
+
+                let confirmSubmit = window.confirm("Are you sure you want to submit ? ");
+
+                if (confirmSubmit)
+                {
+                    const name = document.getElementById("name").value;
+                    const age = document.getElementById("age").value;
+                    const dob = document.getElementById("DoB").value;
+                    const mobileNo = document.getElementById("mobileNo").value;
+                    const country = document.getElementById("country").value;
+                    const gender = document.querySelector("input[name='gender']:checked").value;
+                    const email = document.getElementById("email").value;
+                    const url = document.getElementById("websiteURL").value;
+                    const contactMethod = getContactMethod();
+                    const message = document.getElementById("message").value;
+
+                    document.getElementById("resultName").value = name;
+                    document.getElementById("resultAge").value = age;
+                    document.getElementById("resultDob").value = dob;
+                    document.getElementById("resultMobileNo").value = mobileNo;
+                    document.getElementById("resultCountry").value = country;
+                    document.getElementById("resultGender").value = gender;
+                    document.getElementById("resultEmail").value = email;
+                    document.getElementById("resultUrl").value = url;
+                    document.getElementById("resultContactMethod").value = contactMethod;
+                    document.getElementById("resultMessage").value = message;
+
+                    document.getElementById("submittedContactInfo").style.display="flex";
+                    
+                    document.getElementById("contactForm").style.display="none";
+                    document.getElementById("labelHeading").textContent="This is your contact details submitted";
+
+                    document.getElementById("contactForm").reset();
+                    this.reset();               
+                }                
+            })
+        });
+
+        function getContactMethod()
+        {
+            let text = "";
+            //can use when is using name not id 
+            for(i = 0; i < document.contactForm.contactMethod.length; i++)
+            {
+                if(document.contactForm.contactMethod[i].checked)
+                {
+                    text += document.contactForm.contactMethod[i].value;
+                    text += " | ";
+                }
+            }
+
+            return text;
+        }
+    </script>
+</body>
+</html>

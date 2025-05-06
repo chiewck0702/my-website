@@ -1,0 +1,106 @@
+body{
+    background-color: pink;
+    color: black;
+}
+
+body a{
+    color: white;
+    text-decoration: none;
+}
+
+body > header{ /* only for the Chiew Online Portfolio */
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px, 2px;    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+    min-width: 50%;
+}
+
+nav li{
+    display: inline;
+    border: 2px solid pink;
+    padding: 10px;
+    margin: 10px, 2px;
+}
+
+section{
+    margin-top: 30px;
+}
+
+article header{
+    background-color: purple;
+    text-align: center;
+    padding: 2px;
+    color: pink;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+aside{
+    float: left;
+    width: 25%;
+}
+
+#personalDetails{
+    float: right;
+    width: 70%;
+}
+
+.aFontColorBlack{
+    color: black;
+    text-decoration: underline;
+}
+
+footer{
+    clear: both;
+}
+
+footer p{
+    /* background-color: purple; */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer div img{
+    width: 100.5;
+    height: 101.5;
+}
+
+.autoMarginLeftRight{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.borderPurple{
+    color: purple;
+    border: 2px solid white; 
+    padding: 10px;
+    margin: 0, 2px;
+}
+
+.tblCenter{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submittedContactInfo{
+    display: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submittedContactInfo td{
+    min-width: 250px;
+}
